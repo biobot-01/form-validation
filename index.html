@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation & Regular Expressions | JavaScript</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body>
+  <header class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Form Validation</h1>
+
+        <h2 class="subtitle">Using Vanilla JS & Regex</h2>
+      </div>
+    </div>
+  </header>
+
+  <section class="section has-background-dark">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h3 class="title">User Form</h3>
+            
+            <form>
+              <div class="field">
+                <label class="label" for="name">Name</label>
+  
+                <div class="control">
+                  <input class="input" type="text" name="name" id="name" placeholder="Name">
+                </div>
+
+                <div class="help is-danger is-hidden">Name must be between 2 and 10 characters</div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="zipcode">Zipcode</label>
+  
+                <div class="control">
+                  <input class="input" type="text" name="zipcode" id="zipcode" placeholder="Zipcode">
+                </div>
+
+                <div class="help is-danger is-hidden">Enter a valid zipcode</div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="email">Email</label>
+  
+                <div class="control">
+                  <input class="input" type="text" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="help is-danger is-hidden">Enter a valid email</div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="phone">Phone Number</label>
+  
+                <div class="control">
+                  <input class="input" type="text" name="phone" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="help is-danger is-hidden">Enter a valid phone number</div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary is-fullwidth" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
